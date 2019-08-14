@@ -17,7 +17,7 @@ class Topics extends React.Component {
   componentDidMount (){
 
     const title  = this.props.match.params.title;
-    const bookUrl = 'http://juha.blog/wp-json/wp/v2/posts/?slug=' + title;
+    const bookUrl = 'https://react-wordpress.000webhostapp.com/wp-json/wp/v2/posts/?slug=' + title;
     
     fetch(bookUrl)
     .then(response => response.json())

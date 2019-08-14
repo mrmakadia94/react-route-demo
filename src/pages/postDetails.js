@@ -4,7 +4,6 @@ import renderHTML from 'react-render-html';
 class PostDetails extends Component {
   render () {
     let posts = this.props.posts
-    console.log(posts);
     let postLoop = posts.map((post, index)=> {
       return (
         <div class="col-md-12 col-sm-6">
